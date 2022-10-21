@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script type="text/javascript" src="stock-tracker.js"> </script>
+	<link rel="stylesheet" type="text/css" href="site.css" />
+</head>
+
+<body>
+	<div id="main_container">
+		<div class="modal-content" style="width: auto;height: 10%;">
+			<div class="container">
+				<input type="search" id="symbol_search_input" placeholder="Search symbol by keyword"
+					name="symbol_search_input1" required>
+				<button type="button" id="symbol_search_button" class="searchbtn"
+					onclick="StockChart.searchSymbol()">Search</button>
+				<select name="symbol_search_select_val" id="symbol_search_select" onchange="StockChart.getStockData();">
+					<option value="Choose Symbol">Choose Symbol</option>
+					<option value="IBM">International Business Machines Corp</option>
+				</select>
+			</div>
+		</div>
+		<div class="plot-content" style="width: auto;">
+			<div id="plot_container" class="plot_containercls" style="width: auto;">
+				<div id="chart" style="height:90%"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

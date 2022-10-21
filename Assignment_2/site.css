@@ -1,0 +1,97 @@
+/*tooltip style*/
+.charts-tooltip {
+  font-family: arial;
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  z-index: 998;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #b2b2b2;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/*label style*/
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+  margin: .4rem 0;
+}
+
+/* input and select fields */
+input[type=search],
+select {
+  width: 250px;
+  padding: 2px 4px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* button style */
+button {
+  color: white;
+  padding: 2px 10px;
+  margin: 1px 0;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/*div styles*/
+.searchbtn {
+  width: auto;
+  background-color: #04AA6D;
+}
+
+.container {
+  padding: 1px;
+  background-color: #f1f1f1;
+  border: 1px solid #888;
+}
+
+
+@media screen and (max-width: 300px) {
+  .searchbtn {
+    width: 100%
+  }
+}
+
+.charts-axis-x {
+  font-family: arial;
+  fill: none;
+  font-size: 11px;
+}
+
+.charts-axis-y {
+  font-family: arial;
+  fill: none;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.charts-axis-title {
+  font-family: arial;
+  font-size: 12px;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.charts-title {
+  font-family: arial;
+  font-size: 13px;
+  opacity: 1;
+  font-weight: 600;
+}
